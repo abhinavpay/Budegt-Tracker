@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker </title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="icon/image" href="./images/icons8-calculator-64.png">
+</head>
+<body>
+    
+
+    <div class="container">
+
+            <div class="heading">
+                <h1>Budget Tracker</h1>
+            </div>
+
+
+            <!-- left-side -->
+
+            <div class="budget-box">
+            <label class="left-head-1" for="budget">Enter Your Budget</label><br><br>
+            <input  id="budget_text" type="number"><br><br>
+           <span><button onclick="budgetAdd()" class="left-btn-1"  id="add-btn">Add</button>
+            <button onclick="reset()" class="left-btn-2" id="reset_btn">Reset</button></span> 
+            </div>
+
+            <div class="expense-box">
+                <br>
+                <label class="left-head-2" for="expense">Enter Your Expense</label>
+                <input class="expense_title" id="expense_title" type="text" placeholder="eg-petrol,food">
+            
+                <label for="expense-amount" class="left-head-3">Enter Expense Amount</label>
+                <input  class="expense-amount" id="expense_amount" type="number" placeholder="amount">
+                <button onclick="addExpense()" class="expense-btn">Add Expense</button>
+                
+    
+            </div>
+
+
+
+            <!-- rightside -->
+
+
+            <div class="right">
+                <div class="budget-head">
+                    <p class="right-head-1">Budget</p>
+                    <p class="right-head-2">Expense</p>
+                    <p class="right-head-3">Balance</p>
+    
+                    <img class="budget-logo" src="./images/budget.png" alt="">
+                    <img class="expense-logo" src="./images/expenses.png" alt="">
+                    <img class="balance-logo" src="./images/balance.png" alt="">
+                    
+    
+                <div class="budget_amount"><span class="currency-symbol">₹ </span><span id="budget_amount">0</span></div>
+                <div class="expense-amount-right"><span class="currency-symbol">₹ </span><span id="expense_amount_1">0</span></div>
+                <div class="balance_amount"><span class="currency-symbol">₹ </span><span id="balance_amount">0</span></div>
+                </div>
+    
+                 <div class="expense">
+                    </div>
+                    <div id="expense_list">   
+                    <table>
+                        <thead >
+                            <tr>
+                                <th style="border: 2px solid black; ">Expenses</th>
+                                <th style="border: 2px solid black; ">Expense Amount</th>
+                                <th style="border: 2px solid black; ">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table_exp">
+                            <!-- <tr>
+                                <td style="border: 2px solid black;"></td>
+                                <td style="border: 2px solid black;"></td>
+                                <td style="border: 2px solid black;"></td>
+                            </tr> -->
+                            
+    
+                        </tbody>
+                    </table> 
+                    </div>
+                    
+                </div>
+            </div>
+    
+    
+    </div>
+
+
+    </div>
+    
+
+</body>
+<script src="./script.js"></script>
+</html>

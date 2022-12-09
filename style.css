@@ -1,0 +1,282 @@
+
+body{
+    margin: 0;
+    
+}
+
+.container{
+    
+    
+
+    height: 100vh;
+
+    background: fixed;
+    
+}
+
+/* heading */
+
+.heading{
+    display: flex;
+    justify-content: center;
+    
+    color: rgb(183, 19, 195);
+    font-family: cursive;
+    font-size: 25px;
+    border: 2px solid violet;
+    width: 80%;
+    margin-left: 12%;
+    border-radius: 20px;
+
+   
+}
+
+/* heading  media query*/
+@media screen and (max-width : 767px)  {
+
+    .heading{
+        
+        display: table-row;
+    }
+    
+}
+
+
+.budget-box{
+
+    margin-top: 3%;
+    margin-left: 5%;
+    color: black;
+    width: 25%;
+    height: 35%;
+    border: 2px solid violet;
+    font-family: cursive;
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    border-radius: 15px;
+}
+
+.left-head-1{
+    font-size: 25px;
+    color: rgb(183, 19, 195);
+    
+}
+
+span button{
+    margin: 35px;
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(232, 78, 232);
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-top: -50px;
+
+}
+
+.budget-box input{
+    width: 200px;
+    font-size: 20px;
+} 
+
+
+@media screen and (max-width : 768px)  {
+
+
+
+    .budget-box{
+
+        
+        display: table-row;
+        margin-top: 5%;
+        
+
+    }
+}
+
+
+.expense-box{
+    margin-top: 1%;
+    margin-left: 5%;
+    
+    width: 25%;
+    height: 39%;
+    
+    font-family: cursive;
+    color: white;
+    border: 2px solid violet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+
+.left-head-2{
+    margin-top: -89px;
+    font-size: 25px;
+    /* margin-bottom: 20px; */
+    color: rgb(183, 19, 195);
+    padding-top: 105px;
+}
+
+.expense_title{
+    width: 200px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.left-head-3{
+    padding-top: 25px;
+    font-size: 25px;
+    
+}
+
+
+.expense-amount{
+    margin-top: 20px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.expense-btn{
+    margin: 35px;
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(232, 78, 232);
+    border: 2px solid white;
+    border-radius: 15px;
+    
+    
+}
+
+
+@media screen and (max-width : 768px)  {
+
+
+
+    .expense-box{
+
+        
+        display: table-row;
+        
+        
+
+    }
+}
+
+
+
+
+/* rightside */
+
+.right{
+    float: right;
+    width: 44%;
+    border-radius: 12px;
+    margin-top: -36%;;
+    margin-right: 55px;
+    
+    border: 2px solid violet;
+}
+
+
+
+.right-head-1{
+    margin-left: 43px;
+    font-size: 20px;
+}
+
+.budget-logo{
+    width: 16%;
+    margin-left: 22px;
+}
+.currency-symbol{
+    margin-left: 43px;
+    font-size: 25px;
+    color: green;
+}
+
+.budget_amount{
+    font-size: 20px;
+}
+
+.right-head-2{
+    margin-left: 281px;
+    margin-top: -40px;
+    font-size: 20px;
+}
+
+.right-head-3{
+    margin-left: 500px;
+    margin-top: -40px;
+    font-size: 20px;
+}
+
+
+.expense-logo{
+    width: 13%;
+    margin-left: 21%;
+    
+}
+
+.expense-amount-right{
+    margin-left: 33%;
+    margin-top: -27px;
+    font-size: 20px;
+}
+.balance-logo{
+    width: 15%;
+    margin-left: 21%;
+    
+}
+
+.balance_amount{
+    margin-left: 70%;
+    margin-top: -27px;
+    font-size: 20px;
+}
+
+#expense_list table {
+    text-align: center;
+    padding: 10px 0 ;
+    margin-top: 5%;
+    border: 2px solid grey;
+    margin:  0 0 2px;
+    border-collapse: collapse;
+    
+}
+
+
+
+
+#expense_list table th{
+    width: 2%;
+}
+
+
+@media screen and (max-width : 768px)  {
+
+
+
+    .right{
+
+        
+      
+       float: left;
+       width: 100%;
+        
+        
+
+    }
+}
